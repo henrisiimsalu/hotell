@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-	<title>Hotell / Avaleht</title>
-	<meta name="description" content="Hotell" />
-	<meta name="keywords" content="HTML,HTML5" />
-	<meta name="author" content="Henri Siimsalu" />
-	<meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, intial-scale=1.0>"
-    meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotell – Avaleht</title>
+
+  <!-- Põhistiilid -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Mobiilivaate parandused (laetakse pärast põhistiili) -->
+  <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 500px)" />
+  
+  <!-- Font Awesome (asenda KIT koodiga) -->
+  <script src="https://kit.fontawesome.com/REPLACE_WITH_YOUR_KIT.js" crossorigin="anonymous"></script> <!-- :contentReference[oaicite:1]{index=1} -->
 </head>
 <body>
-	<header>
-        <nav id="navbar">
-        <div class="container">
-			<h1><a href="index.html">KHT</a></h1>
-            <ul>
-                <li><a class="current"a href="index.html">Avaleht</a></li>
-                <li><a href="about.html">Kirjeldus</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-			</ul>
-        </div>
-        </nav>
-		<div id="showcase">
-			<div class="container">
-			<div class="showcase-content">
-				<h1>Tere tulemast VOCO Hotelli!</h1>
-				<p>Siin saate valida meie erinevate hubaste tubade ning võimaluste vahel.</p>
-				<a href="about.html">Rohkem meist</a>
-			</div>
-		</div>
-</header>
+  <!-- HEADER + NAV (vastavalt “struktuur ja navigatsioon”) -->
+  <header id="navbar"> <!-- :contentReference[oaicite:2]{index=2} -->
+    <div class="container">
+      <h1 class="logo"><a href="index.html">HotellLogo</a></h1> <!-- “Logo” kujundamine :contentReference[oaicite:3]{index=3} -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">Avaleht</a></li> <!-- current lehel :contentReference[oaicite:4]{index=4} -->
+          <li><a href="about.html">Kirjeldus</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SHOWCASE / VITRIIN -->
+  <section id="showcase"> <!-- struktuur + taustapilt showcase.jpg + kõrgus :contentReference[oaicite:5]{index=5} -->
+    <div class="container">
+      <div class="showcase-content">
+        <h1>Tere <span class="text-primary">tulemast</span></h1> <!-- teksti heledamaks + span värv :contentReference[oaicite:6]{index=6} -->
+        <p>Naudi mugavat majutust ja suurepärast teenindust meie südames asuvas hotellis.</p> <!-- ridade vahe + vahed :contentReference[oaicite:7]{index=7} -->
+        <a href="about.html" class="btn">Rohkem meist</a> <!-- link kui nupp + :hover :contentReference[oaicite:8]{index=8} -->
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SEKTSIOON (poolitusega) -->
+  <section id="info" class="bg-alt"> <!-- kõrgus/seade + taustaklass eraldi :contentReference[oaicite:9]{index=9} -->
+    <div class="info-img"></div> <!-- vasak pool – taust pildiga photo-1.jpg :contentReference[oaicite:10]{index=10} -->
+    <div class="info-content">
+      <h2 class="text-primary">Mugavused ja asukoht</h2>
+      <p>Asume jalutuskäigu kaugusel vanalinnast. Tubades on kaasaegsed mugavused ja hubane atmosfäär.</p>
+      <a href="about.html" class="btn btn-light">Loe rohkem</a> <!-- heledale nupule klass :contentReference[oaicite:11]{index=11} -->
+    </div>
+  </section>
+
+  <!-- VÕIMALUSED (3 kastiga) -->
+  <section id="features" class="py-30"> <!-- kolmekordne jaotus + .box + taustad + ikoonid :contentReference[oaicite:12]{index=12} -->
+    <div class="container">
+      <h2 class="mb-20">Võimalused</h2>
+      <div class="box bg-gray">
+        <i class="fa-solid fa-location-dot fa-3x"></i> <!-- ikoon + suurus 3x :contentReference[oaicite:13]{index=13} -->
+        <h3>Suurepärane asukoht</h3>
+        <p>Linnasüda, parimad vaatamisväärsused sinu lähedal.</p>
+      </div>
+      <div class="box bg-yellow">
+        <i class="fa-solid fa-utensils fa-3x"></i>
+        <h3>Toitlustus</h3>
+        <p>Hommikusöök, kohvik ja restoran – valik igale maitsele.</p>
+      </div>
+      <div class="box bg-light">
+        <i class="fa-solid fa-dumbbell fa-3x"></i>
+        <h3>Sport &amp; Relax</h3>
+        <p>Spordisaal, saun ja lõõgastusala sinu heaoluks.</p>
+      </div>
+      <div class="clear"></div> <!-- floatide tühistamine enne jalust -->
+    </div>
+  </section>
+
+  <!-- FOOTER / JALUS -->
+  <footer class="bg-dark">
+    <div class="container">
+      <p>&copy; 2025 Hotell. Kõik õigused kaitstud.</p>
+    </div>
+  </footer>
 </body>
 </html>

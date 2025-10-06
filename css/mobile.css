@@ -1,0 +1,33 @@
+/* Mobiilivaate erisused ( ≤500px ) – lisati teise failina ja lingiti pärast style.css */ /* :contentReference[oaicite:64]{index=64} */
+
+/* NAVIGATSIOON: logo keskele, lingid vertikaalseks, väiksemad plokid + eraldusjooned */
+#navbar .logo { float: none; text-align: center; padding: 15px 0; } /* :contentReference[oaicite:65]{index=65} */
+#navbar ul { float: none; }
+#navbar ul li { float: none; }
+#navbar ul li a { padding: 12px 10px; border-bottom: 1px solid #333; } /* eristusjoon */ /* :contentReference[oaicite:66]{index=66} */
+
+/* SHOWCASE: vähenda kõrgust ja pealmist pad’i, lisa alt ruumi, et nupp jääks sisse */
+#showcase { height: 320px; } /* :contentReference[oaicite:67]{index=67} */
+.showcase-content { padding-top: 60px; padding-bottom: 20px; } /* :contentReference[oaicite:68]{index=68} */
+
+/* INFO (index): horisontaal -> vertikaal; pilt eemaldada väiksel ekraanil, tekst täislaiuses */
+#info { display: block; } /* :contentReference[oaicite:69]{index=69} */
+#info .info-img { display: none; } /* pilt maha mobiilis */ /* :contentReference[oaicite:70]{index=70} */
+#info .info-content { max-width: 100%; padding: 20px; }
+
+/* FEATURES: kolm kasti -> vertikaalne virn, täislaius */
+#features .box { float: none; width: 100%; margin-bottom: 10px; } /* :contentReference[oaicite:71]{index=71} */
+
+/* ABOUT – info: grid -> üks veerg; pilt alla/üles, lisa vahe */
+#about-info .about-grid { grid-template-columns: 1fr; } /* :contentReference[oaicite:72]{index=72} */
+.about-photo { margin-top: 10px; }
+
+/* ABOUT – Arvamused: kaks -> üks veerg */
+#testimonials .t-grid { grid-template-columns: 1fr; } /* :contentReference[oaicite:73]{index=73} */
+#testimonials h1 { text-align: center; } /* ühtlustus menüüga */ /* :contentReference[oaicite:74]{index=74} */
+
+/* CONTACT – pealkiri ja labelid keskele */
+h1.center, .form-control label { text-align: center; } /* :contentReference[oaicite:75]{index=75} */
+
+/* CONTACT – kolme info kasti asemel vertikaal ja eraldamiseks joonega servad (nagu menüüs) */
+.contact-grid .box { width: 100%; border-bottom: 1px solid #555; padding: 20px 10px; } /* :contentReference[oaicite:76]{index=76} */
