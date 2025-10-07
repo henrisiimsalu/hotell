@@ -4,24 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hotell – Avaleht</title>
-
-  <!-- Põhistiilid -->
   <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Mobiilivaate parandused (laetakse pärast põhistiili) -->
   <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 500px)" />
-  
-  <!-- Font Awesome (asenda KIT koodiga) -->
-  <script src="https://kit.fontawesome.com/REPLACE_WITH_YOUR_KIT.js" crossorigin="anonymous"></script> <!-- :contentReference[oaicite:1]{index=1} -->
+  <!-- Font Awesome KIT — lisa siia oma KIT kood (juhendis nõutud) --> <!-- :contentReference[oaicite:5]{index=5} -->
+  <script src="https://kit.fontawesome.com/REPLACE_WITH_YOUR_KIT.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- HEADER + NAV (vastavalt “struktuur ja navigatsioon”) -->
-  <header id="navbar"> <!-- :contentReference[oaicite:2]{index=2} -->
+  <!-- NAV/MENÜÜ --> <!-- struktuur+kujundus --> <!-- :contentReference[oaicite:6]{index=6} -->
+  <header id="navbar">
     <div class="container">
-      <h1 class="logo"><a href="index.html">HotellLogo</a></h1> <!-- “Logo” kujundamine :contentReference[oaicite:3]{index=3} -->
+      <h1 class="logo"><a href="index.html">HotellLogo</a></h1> <!-- :contentReference[oaicite:7]{index=7} -->
       <nav>
         <ul>
-          <li><a href="index.html" class="current">Avaleht</a></li> <!-- current lehel :contentReference[oaicite:4]{index=4} -->
+          <li><a href="index.html" class="current">Avaleht</a></li>
           <li><a href="about.html">Kirjeldus</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -29,51 +24,51 @@
     </div>
   </header>
 
-  <!-- SHOWCASE / VITRIIN -->
-  <section id="showcase"> <!-- struktuur + taustapilt showcase.jpg + kõrgus :contentReference[oaicite:5]{index=5} -->
+  <!-- SHOWCASE/VITRIIN --> <!-- :contentReference[oaicite:8]{index=8} -->
+  <section id="showcase">
     <div class="container">
       <div class="showcase-content">
-        <h1>Tere <span class="text-primary">tulemast</span></h1> <!-- teksti heledamaks + span värv :contentReference[oaicite:6]{index=6} -->
-        <p>Naudi mugavat majutust ja suurepärast teenindust meie südames asuvas hotellis.</p> <!-- ridade vahe + vahed :contentReference[oaicite:7]{index=7} -->
-        <a href="about.html" class="btn">Rohkem meist</a> <!-- link kui nupp + :hover :contentReference[oaicite:8]{index=8} -->
+        <h1>Tere <span class="text-primary">tulemast</span></h1>
+        <p>Naudi mugavat majutust ja suurepärast teenindust meie südames asuvas hotellis.</p>
+        <a href="about.html" class="btn">Rohkem meist</a> <!-- nupp-stiil --> <!-- :contentReference[oaicite:9]{index=9} -->
       </div>
     </div>
   </section>
 
-  <!-- INFO SEKTSIOON (poolitusega) -->
-  <section id="info" class="bg-alt"> <!-- kõrgus/seade + taustaklass eraldi :contentReference[oaicite:9]{index=9} -->
-    <div class="info-img"></div> <!-- vasak pool – taust pildiga photo-1.jpg :contentReference[oaicite:10]{index=10} -->
+  <!-- INFO SEKTSIOON (poolitusega) --> <!-- :contentReference[oaicite:10]{index=10} -->
+  <section id="info" class="bg-alt">
+    <div class="info-img"></div> <!-- photo-1.jpg taust --> <!-- :contentReference[oaicite:11]{index=11} -->
     <div class="info-content">
       <h2 class="text-primary">Mugavused ja asukoht</h2>
       <p>Asume jalutuskäigu kaugusel vanalinnast. Tubades on kaasaegsed mugavused ja hubane atmosfäär.</p>
-      <a href="about.html" class="btn btn-light">Loe rohkem</a> <!-- heledale nupule klass :contentReference[oaicite:11]{index=11} -->
+      <a href="about.html" class="btn btn-light">Loe rohkem</a>
     </div>
   </section>
 
-  <!-- VÕIMALUSED (3 kastiga) -->
-  <section id="features" class="py-30"> <!-- kolmekordne jaotus + .box + taustad + ikoonid :contentReference[oaicite:12]{index=12} -->
+  <!-- VÕIMALUSED (3 kasti) --> <!-- struktuur + .box + ikoonid --> <!-- :contentReference[oaicite:12]{index=12} :contentReference[oaicite:13]{index=13} -->
+  <section id="features" class="py-30">
     <div class="container">
       <h2 class="mb-20">Võimalused</h2>
       <div class="box bg-gray">
-        <i class="fa-solid fa-location-dot fa-3x"></i> <!-- ikoon + suurus 3x :contentReference[oaicite:13]{index=13} -->
+        <i class="fa-solid fa-location-dot fa-3x"></i>
         <h3>Suurepärane asukoht</h3>
-        <p>Linnasüda, parimad vaatamisväärsused sinu lähedal.</p>
+        <p>Linnasüda, vaatamisväärsused sinu lähedal.</p>
       </div>
       <div class="box bg-yellow">
         <i class="fa-solid fa-utensils fa-3x"></i>
         <h3>Toitlustus</h3>
-        <p>Hommikusöök, kohvik ja restoran – valik igale maitsele.</p>
+        <p>Hommikusöök, kohvik ja restoran.</p>
       </div>
       <div class="box bg-light">
         <i class="fa-solid fa-dumbbell fa-3x"></i>
-        <h3>Sport &amp; Relax</h3>
-        <p>Spordisaal, saun ja lõõgastusala sinu heaoluks.</p>
+        <h3>Sport &amp; Lõõgastus</h3>
+        <p>Spordisaal, saun ja lõõgastusala.</p>
       </div>
-      <div class="clear"></div> <!-- floatide tühistamine enne jalust -->
+      <div class="clear"></div> <!-- floatide tühistamine --> <!-- :contentReference[oaicite:14]{index=14} -->
     </div>
   </section>
 
-  <!-- FOOTER / JALUS -->
+  <!-- JALUS --> <!-- :contentReference[oaicite:15]{index=15} -->
   <footer class="bg-dark">
     <div class="container">
       <p>&copy; 2025 Hotell. Kõik õigused kaitstud.</p>
