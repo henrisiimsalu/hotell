@@ -9,6 +9,7 @@
 </head>
 <body>
   <header>
+    <!--navigatsioon-->
     <nav id="navbar">
     <div class="container">
       <h1><a href="index.html">KHT</a></h1>
@@ -24,50 +25,38 @@
   <div id="showcase">
     <div class="container">
       <div class="showcase-content">
-        <h1>Tere tulemast KHT Hotelli!</h1>
+        <h1><span class="text-primary"> Tere tulemast</span> KHT Hotelli!</h1>
         <p>Parim koht mugavuste leidmiseks!</p>
-        <a href="about.html">Rohkem meist</a>
+        <a class= "btn" href="about.html">Rohkem meist</a>
       </div>
   </header>
-
-  <!-- INFO SEKTSIOON (poolitusega) --> <!-- :contentReference[oaicite:10]{index=10} -->
-  <section id="info" class="bg-alt">
-    <div class="info-img"></div> <!-- photo-1.jpg taust --> <!-- :contentReference[oaicite:11]{index=11} -->
+  <!--info-->
+  <section id="info" class="bg-dark">
+    <div class= "info-img"></div>
     <div class="info-content">
-      <h2 class="text-primary">Mugavused ja asukoht</h2>
-      <p>Asume jalutuskäigu kaugusel vanalinnast. Tubades on kaasaegsed mugavused ja hubane atmosfäär.</p>
-      <a href="about.html" class="btn btn-light">Loe rohkem</a>
+      <h2><span class="text-primary">Ajalugu</span></h2>
+      <p>Loodud inimestele, kes vajavad rutiinist puhkust</p>
+      <a class="btn btn-light" href="about.html">Loe rohkem</a>
     </div>
   </section>
-
-  <!-- VÕIMALUSED (3 kasti) --> <!-- struktuur + .box + ikoonid --> <!-- :contentReference[oaicite:12]{index=12} :contentReference[oaicite:13]{index=13} -->
-  <section id="features" class="py-30">
-    <div class="container">
-      <h2 class="mb-20">Võimalused</h2>
-      <div class="box bg-gray">
-        <i class="fa-solid fa-location-dot fa-3x"></i>
-        <h3>Suurepärane asukoht</h3>
-        <p>Linnasüda, vaatamisväärsused sinu lähedal.</p>
-      </div>
-      <div class="box bg-yellow">
-        <i class="fa-solid fa-utensils fa-3x"></i>
-        <h3>Toitlustus</h3>
-        <p>Hommikusöök, kohvik ja restoran.</p>
-      </div>
-      <div class="box bg-light">
-        <i class="fa-solid fa-dumbbell fa-3x"></i>
-        <h3>Sport &amp; Lõõgastus</h3>
-        <p>Spordisaal, saun ja lõõgastusala.</p>
-      </div>
-      <div class="clear"></div> <!-- floatide tühistamine --> <!-- :contentReference[oaicite:14]{index=14} -->
+  <!--võimalused-->
+  <section id="features">
+    <div class="box bg-light">
+      <h3>Asukoht</h3>
+      <p>Otse kesklinna südames</p>
+    </div>
+    <div class="box bg-dark">
+      <h3>Söök</h3>
+      <p>Maitsvad valikud igale maitsele</p>
+    </div>
+    <div class="box bg-light">
+      <h3>Sport</h3>
+      <p>Lisaks basseinile võimalik ka kasutada jõusaaali</p>
     </div>
   </section>
-
-  <!-- JALUS --> <!-- :contentReference[oaicite:15]{index=15} -->
-  <footer class="bg-dark">
-    <div class="container">
-      <p>&copy; 2025 Hotell. Kõik õigused kaitstud.</p>
-    </div>
+  <div class="clear"></div>
+  <footer>
+    <p>KHT &copy;2025, Kõik Õigused On kaitstud</p>
   </footer>
 </body>
 </html>
