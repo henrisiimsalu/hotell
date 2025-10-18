@@ -26,3 +26,34 @@ navbar ul li {
 #info .info-img {
     display: none;
 }
+#info .info-content {
+    float: none;
+    width: 100%;
+}
+/*features*/
+#features .box {
+    float: none;
+    width: 100%;
+}
+/*about*/
+#about-info .info-left,
+#about-info .info-right {
+    float: none;
+    width: 100%;
+}
+#about-info .info-right {
+    margin-top: 30px;
+}
+#about-info .info-left h1 {
+    text-align: center;
+}
+/*contact-info*/
+#contact-form h1,
+#contact-form p {
+    text-align: center;
+}
+#contact-info .box {
+    float: none;
+    width: 100%;
+    border-bottom:#444 dotted 1px;
+}
